@@ -3,21 +3,13 @@ name: CI/CD
 on:
     push:
         branches:
-            - master
+            - main
     pull_request:
         branches:
-            - master
+            - main
 
 jobs:
-    test:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v3
-
-            - run: echo CodeCoverage
-
     build:
-        needs: test
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
