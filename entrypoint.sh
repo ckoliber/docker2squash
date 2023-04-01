@@ -1,6 +1,6 @@
 #!/bin/sh
 
-registry serve /etc/docker/registry/config.yml & sleep 1
+registry serve /etc/docker/registry/config.yml > /dev/null 2>&1 & sleep 1
 
 docker tag $1 127.0.0.1:5000/$1
 
