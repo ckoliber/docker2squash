@@ -5,7 +5,7 @@ Docker2Squash is a docker image for building squashfs files from local docker im
 ## Usage
 
 ```bash
-docker run --rm -it --net=host -v $(pwd):/data -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/ckoliber/docker2squash java $(id -u)
+docker run --rm -it --net=host -v $(pwd):/data -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/ckoliber/docker2squash java
 ```
 
 ## Contributing
